@@ -1,0 +1,488 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* -- Logo Font -- */
+@font-face {
+    font-family: sfArcheryBlack;
+    src: url("../fonts/SF Archery Black.ttf"); 
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* --  HEADER -- */
+#header-section {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+}
+
+#header-section > header {
+    height: 100%;
+    width: 1125px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header > h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+    font-family: sfArcheryBlack;
+}
+
+header > h1 > span {
+    color: #1E824C;
+}
+
+/* --  NAVBAR -- */
+#navbar-section {
+    width: 100%;
+    height: 48px;
+}
+
+#navbar-mobile {
+    visibility: hidden;
+    z-index: -1;
+}
+
+#navbar-section > nav {
+    height: 100%;
+    width: 1125px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom: 2px solid #6C7A89;
+}
+
+/* navbar left */
+#navbar-left {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    width: auto;
+    float: left;         
+}
+
+#navbar-left > li {
+    display: inline;
+}
+
+#navbar-left > li > a {
+    text-decoration: none;
+    line-height: 50px;
+    text-align: middle;
+    padding: 0 15px;
+    color: black;
+}
+
+#navbar-left > li > a:hover {
+    border-left: 4px solid #26C281;
+    padding-left: 3px;
+    margin-left: 8px;
+}
+
+/* navbar right */
+#navbar-right {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    width: auto;
+    float: right;          
+}
+
+#navbar-right > li {
+    display: inline;
+}
+
+#navbar-right > li > a {
+    text-decoration: none;
+    line-height: 55px;
+    text-align: middle;
+    padding: 0 15px;
+    color: black;
+}
+
+#navbar-right > li > a:hover {
+    opacity: 0.7;
+}
+
+#logo {
+    font-family: sfArcheryBlack;
+    font-size: 1em;
+    color: #4DAF7C;
+    padding: 0 5px;
+}
+
+/* --  CONTENT -- */
+#content-section {
+    width: 100%;
+    overflow: auto;
+}
+
+.content-container {
+    width: 1125px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.article-section-left {
+    float: left;
+    width: 710px;
+    padding-right: 5px;
+}
+
+.article-section-right {
+    float: left;
+    width: 405px;
+    padding-left: 5px;
+}
+
+/* PREVIEW STYLES */
+
+.preview > h1,
+.preview > h2,
+.preview > h3 {
+    margin: 0;
+    padding: 15px 0 0 0;
+    line-height: 105%;
+}
+
+.preview a {
+    color: black;
+    text-decoration: none;
+}
+
+.preview > h3 > span {
+    color: #6C7A89;
+    font-size: 75%;
+}
+
+.preview img {
+    width: 100%;
+}
+
+.article-section-right > h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #6C7A89;
+    color: #4DAF7C;
+}
+
+.article-section-right > .preview-full-wide > h3 {
+    padding-top: 0;
+}
+
+.article-section-right > .preview-full-wide > img + h3 {
+    padding-top: 10px;
+}
+
+.preview > h1:hover,
+.preview > h2:hover,
+.preview > h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.preview > p {
+    margin: 0;
+    padding: 0;
+}
+
+.preview-full-wide {
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid grey;   
+}
+
+.preview-lowest {
+    border-bottom: 0;
+}
+
+.index-header {
+    padding-top: 5px;
+    border-top: 2px solid #6C7A89;
+    color: #4DAF7C;
+}
+
+.index-column-10th {
+    width: 112.5px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: inline;
+}
+
+.index-column-10th > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 15px;   
+}
+
+.index-column-10th > ul > li:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.index-column-10th > ul > li > a {
+    text-decoration: none;
+    color: #95A5A6;
+}
+
+.index-column-10th > ul > li > a:hover,
+.index-column-40pct > ul > li > a:hover {
+    opacity: 0.5;
+}
+
+.index-column-40pct > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.index-column-40pct > ul > li {
+    display: inline;
+    margin: 0 2.5% 0 0;
+}
+
+.index-column-40pct > ul > li > a {
+    color: #95A5A6;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 1125px) {
+    .article-section-right {
+        display: none;
+        width: 0;
+    }
+    
+    #content-section {
+        padding: 0 5vw;
+    }
+
+    #navbar-section > nav {
+        width: 100vw;
+    }
+
+    .article-section-left,
+    .article-section-full-wide,
+    #header-section > header {
+        width: 90vw;
+    }
+
+    .content-container {
+        width: 90vw;
+        margin: 0;
+    }
+
+    #navbar-left > li > a {
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #index {
+        display: none;
+        width: 0;
+    }
+
+    header > h1 {
+        margin-top: 3vh;
+        font-size: 3em;
+    }
+    
+    nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 584px) {
+    #navbar-right {
+        display: none;
+        width: 0;
+    }
+}
+
+@media (max-width: 494px) {
+    #navbar-section {
+        height: 100px;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
