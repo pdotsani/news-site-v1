@@ -90,6 +90,11 @@ header > h1 > span {
 }
 
 /* --  NAVBAR -- */
+
+.fixed-top {
+    position: fixed,
+    top: 0;
+}
 #navbar-section {
     width: 100%;
     height: 48px;

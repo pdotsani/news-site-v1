@@ -6,13 +6,14 @@ $(document).ready(function() {
 
 	/* Activates plugin that makes navbar 
 	stick to top of browser window */
-	$('#navbar-section').stick_in_parent();
+	
 
 	/* Activates plugin that will toggle 
 		css to make navbar fill width of navbar
 		and revert back to normal style */
 	$('#content-section').waypoint({
 		handler: function(direction) {
+			$('#navbar-section').stick_in_parent();
 			$('#navbar-section > nav').css('width', '100%');
 		}
 	});
@@ -20,6 +21,7 @@ $(document).ready(function() {
 		handler: function(direction) {
 			/* Styles get overwritten in moile modes 
 			via responsive stylings */
+			$('#navbar-section').trigger("sticky_kit:detach");
 			$('#navbar-section > nav').css('width', '1125px');
 		}
 	});
